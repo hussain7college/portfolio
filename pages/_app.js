@@ -6,13 +6,12 @@ import "../styles/themes.css";
 
 function MyApp({ Component, pageProps }) {
 
+  const defaultTheme = "dracula";
   useEffect(() => {
-    if (localStorage.getItem("theme")) {
-      document.documentElement.setAttribute(
-        "data-theme",
-        localStorage.getItem("theme")
-      );
-    }
+    document.documentElement.setAttribute(
+      "data-theme",
+      localStorage.getItem("theme") || defaultTheme
+    );
   }, []);
 
   return (

@@ -2,16 +2,16 @@
   {
     "id": 1,
     "name": "IEEE Young Professional",
-    "image": "https://imgur.com/kbGs6zH.png",
+    "image": "/cert_ieeeYP.webp",
     "description": "Recognition Certificate as an IOS / Android developer.",
-    "url": ""
+    "url": "https://drive.google.com/file/d/1C1wsxs6XHkbJX4WmfzQVVTGYGaRvMf8o/view?usp=sharing"
   },
   {
     "id": 1,
     "name": "Advance React JS",
-    "image": "https://imgur.com/kbGs6zH.png",
+    "image": "/cert_mosh.webp",
     "description": "a comprehensive course on frontend development with React JS",
-    "url": ""
+    "url": "https://drive.google.com/file/d/1qG1MU3Jn8N2bh3S-HZbnSL6DcOP3L3ul/view?usp=sharing"
   }
  
 ]

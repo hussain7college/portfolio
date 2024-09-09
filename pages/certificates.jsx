@@ -5,7 +5,7 @@ import styles from '../styles/CertificatesPage.module.css';
 const CertificatesPage = ({ certificates }) => {
   return (
     <>
-      <h3>Stuff I've Built So Far</h3>
+      <h3>Certificates I Earned So Far</h3>
       <div className={styles.container}>
         {certificates.map((certificate) => (
           <CertificateCard key={certificate.id} certificate={certificate} />
