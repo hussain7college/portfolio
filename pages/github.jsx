@@ -3,7 +3,7 @@ import GitHubCalendar from 'react-github-calendar';
 import RepoCard from '../components/RepoCard';
 import styles from '../styles/GithubPage.module.css';
 
-const GithubPage = ({ repos, user }) => {
+const GithubPage = ({ repos, user, error }) => {
   const theme = {
     level0: '#161B22',
     level1: '#0e4429',
@@ -12,8 +12,11 @@ const GithubPage = ({ repos, user }) => {
     level4: '#39d353',
   };
 
-  console.log('✅', { repos, user });
-
+  if (error) {
+    return (
+      <a target="_blank" rel="noopener noreferrer" href="https://github.com/Hussain7Abbas">Hussain Abbas</a>
+    );
+  }
 
   return (
     <>
@@ -53,6 +56,7 @@ const GithubPage = ({ repos, user }) => {
 };
 
 export async function getStaticProps() {
+  let error = false;
   const userRes = await fetch(
     `https://api.github.com/users/${process.env.NEXT_PUBLIC_GITHUB_USERNAME}`,
     {
@@ -62,6 +66,9 @@ export async function getStaticProps() {
     }
   );
   const user = await userRes.json();
+  if (user.status) {
+    error = true;
+  }
 
   const repoRes = await fetch(
     `https://api.github.com/users/${process.env.NEXT_PUBLIC_GITHUB_USERNAME}/repos?per_page=100`,
@@ -72,11 +79,15 @@ export async function getStaticProps() {
     }
   );
   let repos = await repoRes.json();
-  repos = repos
-    .sort((a, b) => b.stargazers_count - a.stargazers_count);
+  if (repos.status) {
+    error = true;
+  } else {
+    repos = repos
+      .sort((a, b) => b.stargazers_count - a.stargazers_count);
+  }
 
   return {
-    props: { title: 'GitHub', repos, user },
+    props: { title: 'GitHub', repos, user, error },
     revalidate: 10,
   };
 }
