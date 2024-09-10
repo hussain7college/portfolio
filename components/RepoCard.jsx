@@ -8,7 +8,7 @@ import styles from '../styles/RepoCard.module.css';
 const RepoCard = ({ repo }) => {
   return (
     <div className={styles.card}>
-      <div>
+      <div className={styles.cardBody}>
         <h3 className={styles.title}>{repo.name}</h3>
         <p>{repo.description}</p>
       </div>

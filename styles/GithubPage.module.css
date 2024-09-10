@@ -23,6 +23,21 @@
   border-right: none;
 }
 
+.userProfile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userProfile{
+  color: inherit;
+  text-decoration: none;
+}
+
+.avatar{
+  border-radius: 8px;
+}
+
 .username {
   margin-left: 10px;
 }

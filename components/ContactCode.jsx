@@ -3,23 +3,23 @@ import styles from '../styles/ContactCode.module.css';
 const contactItems = [
   {
     social: 'website',
-    link: 'nitinranganath.me',
-    href: 'https://nitinranganath.me',
+    link: 'hussain7abbas.com',
+    href: 'https://hussain7abbas.com',
   },
   {
     social: 'email',
-    link: 'nitinranganath@gmail.com',
-    href: 'mailto:nitinranganath@gmail.com',
+    link: 'hussain.jazing.21@gmail.com',
+    href: 'mailto:hussain.jazing.21@gmail.com',
   },
   {
     social: 'github',
-    link: 'itsnitinr',
-    href: 'https://github.com/itsnitinr',
+    link: 'Hussain7Abbas',
+    href: 'https://github.com/Hussain7Abbas',
   },
   {
     social: 'linkedin',
-    link: 'nitinranganath',
-    href: 'https://www.linkedin.com/in/nitinranganath/',
+    link: 'Hussain Abbas',
+    href: 'https://www.linkedin.com/in/hussain-abbas-689117160/',
   },
   {
     social: 'twitter',

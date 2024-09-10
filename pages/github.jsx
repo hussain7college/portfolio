@@ -12,10 +12,13 @@ const GithubPage = ({ repos, user }) => {
     level4: '#39d353',
   };
 
+  console.log('✅', { repos, user });
+
+
   return (
     <>
       <div className={styles.user}>
-        <div>
+        <a href={user.html_url} target="_blank" rel="noopener noreferrer" className={styles.userProfile}>
           <Image
             src={user.avatar_url}
             className={styles.avatar}
@@ -24,7 +27,7 @@ const GithubPage = ({ repos, user }) => {
             height={50}
           />
           <h3 className={styles.username}>{user.login}</h3>
-        </div>
+        </a>
         <div>
           <h3>{user.public_repos} repos</h3>
         </div>
@@ -70,8 +73,7 @@ export async function getStaticProps() {
   );
   let repos = await repoRes.json();
   repos = repos
-    .sort((a, b) => b.stargazers_count - a.stargazers_count)
-    .slice(0, 6);
+    .sort((a, b) => b.stargazers_count - a.stargazers_count);
 
   return {
     props: { title: 'GitHub', repos, user },

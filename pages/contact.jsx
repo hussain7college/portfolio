@@ -1,29 +1,33 @@
 import { useState } from 'react';
 import ContactCode from '../components/ContactCode';
 import styles from '../styles/ContactPage.module.css';
+import toast from 'react-hot-toast';
 
 const ContactPage = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
   const submitForm = async (e) => {
     e.preventDefault();
     console.log(process.env.NEXT_PUBLIC_API_URL);
+    setIsLoading(true);
     const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/contact`, {
       method: 'POST',
       body: JSON.stringify({ name, email, subject, message }),
     });
     if (res.ok) {
-      alert('Your response has been received!');
+      toast.success("Your response has been received!", { id: "general_toast" });
       setName('');
       setEmail('');
       setSubject('');
       setMessage('');
     } else {
-      alert('There was an error. Please try again in a while.');
+      toast.error("There was an error. Please try again in a while.", { id: "general_toast" });
     }
+    setIsLoading(false);
   };
 
   return (
@@ -81,7 +85,7 @@ const ContactPage = () => {
               required
             ></textarea>
           </div>
-          <button type="submit">Submit</button>
+          <button type="submit" disabled={isLoading}>Submit</button>
         </form>
       </div>
     </div>
