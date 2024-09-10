@@ -10,7 +10,7 @@ const CustomHead = ({ title }) => {
       />
       <meta
         name="keywords"
-        content="nitin ranganath, nitin, ranganath, web developer portfolio, nitin web developer, nitin developer, mern stack, nitin ranganath portfolio, vscode-portfolio"
+        content="hussain abbas, hussain, abbas, web developer portfolio, hussain web developer, hussain developer, mern stack, hussain abbas portfolio, vscode-portfolio"
       />
       <meta property="og:title" content="Hussain Abbas's Portfolio" />
       <meta
@@ -18,7 +18,7 @@ const CustomHead = ({ title }) => {
         content="A full-stack developer building websites that you'd like to use."
       />
       <meta property="og:image" content="https://imgur.com/4zi5KkQ.png" />
-      <meta property="og:url" content="https://vscode-portfolio.vercel.app" />
+      <meta property="og:url" content="https://hussain7abbas.com" />
       <meta name="twitter:card" content="summary_large_image" />
     </Head>
   );

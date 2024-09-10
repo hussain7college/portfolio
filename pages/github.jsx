@@ -2,6 +2,7 @@ import Image from 'next/image';
 import GitHubCalendar from 'react-github-calendar';
 import RepoCard from '../components/RepoCard';
 import styles from '/styles/GithubPage.module.css';
+import BlurFade from '/components/magicui/blur-fade';
 
 const GithubPage = ({ repos, user, error }) => {
   const theme = {
@@ -21,26 +22,32 @@ const GithubPage = ({ repos, user, error }) => {
   return (
     <>
       <div className={styles.user}>
-        <a href={user.html_url} target="_blank" rel="noopener noreferrer" className={styles.userProfile}>
-          <Image
-            src={user.avatar_url}
-            className={styles.avatar}
-            alt={user.login}
-            width={50}
-            height={50}
-          />
-          <h3 className={styles.username}>{user.login}</h3>
-        </a>
-        <div>
-          <h3>{user.public_repos} repos</h3>
-        </div>
-        <div>
-          <h3>{user.followers} followers</h3>
-        </div>
+        <BlurFade>
+          <div className={styles.user_header}>
+            <a href={user.html_url} target="_blank" rel="noopener noreferrer" className={styles.userProfile}>
+              <Image
+                src={user.avatar_url}
+                className={styles.avatar}
+                alt={user.login}
+                width={50}
+                height={50}
+              />
+              <h3 className={styles.username}>{user.login}</h3>
+            </a>
+            <div>
+              <h3>{user.public_repos} repos</h3>
+            </div>
+            <div>
+              <h3>{user.followers} followers</h3>
+            </div>
+          </div>
+        </BlurFade>
       </div>
       <div className={styles.container}>
-        {repos.map((repo) => (
-          <RepoCard key={repo.id} repo={repo} />
+        {repos.map((repo, idx) => (
+          <BlurFade delay={0.25 + idx * 0.05} key={repo.id}>
+            <RepoCard repo={repo} />
+          </BlurFade>
         ))}
       </div>
       <div className={styles.contributions}>

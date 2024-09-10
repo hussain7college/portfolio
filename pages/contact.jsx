@@ -2,6 +2,7 @@ import { useState } from 'react';
 import ContactCode from '/components/ContactCode';
 import styles from '/styles/ContactPage.module.css';
 import toast from 'react-hot-toast';
+import BlurFade from '/components/magicui/blur-fade';
 
 const ContactPage = () => {
   const [name, setName] = useState('');
@@ -33,11 +34,15 @@ const ContactPage = () => {
   return (
     <div className={styles.container}>
       <div>
-        <h3 className={styles.heading}>Reach Out Via Socials</h3>
+        <BlurFade inView>
+          <h3 className='text-2xl mb-3'>Reach Out Via Socials</h3>
+        </BlurFade>
         <ContactCode />
       </div>
       <div>
-        <h3 className={styles.heading}>Or Fill Out This Form</h3>
+        <BlurFade delay={0.25} inView>
+          <h3 className={styles.heading}>Or Fill Out This Form</h3>
+        </BlurFade>
         <form className={styles.form} onSubmit={submitForm}>
           <div className={styles.flex}>
             <div>
