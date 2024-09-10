@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Illustration from '../components/Illustration';
-import styles from '../styles/HomePage.module.css';
+import styles from '/styles/HomePage.module.css';
 
 export default function HomePage() {
   return (

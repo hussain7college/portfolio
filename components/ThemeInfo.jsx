@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from '../styles/ThemeInfo.module.css';
+import styles from '/styles/ThemeInfo.module.css';
 
 const ThemeInfo = ({ icon, name, publisher, theme }) => {
   const setTheme = (theme) => {

@@ -1,6 +1,6 @@
 import CertificateCard from '../components/CertificateCard';
 import { getCertificates } from './api/certificates';
-import styles from '../styles/CertificatesPage.module.css';
+import styles from '/styles/CertificatesPage.module.css';
 
 const CertificatesPage = ({ certificates }) => {
   return (

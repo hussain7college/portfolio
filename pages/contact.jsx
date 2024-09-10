@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import ContactCode from '../components/ContactCode';
-import styles from '../styles/ContactPage.module.css';
+import ContactCode from '/components/ContactCode';
+import styles from '/styles/ContactPage.module.css';
 import toast from 'react-hot-toast';
 
 const ContactPage = () => {
