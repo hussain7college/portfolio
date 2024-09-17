@@ -92,11 +92,46 @@
   background: rgba(131, 205, 41, 0.25);
 }
 
+.postgres {
+  border: 0.1rem solid rgb(52, 89, 149);
+}
+.postgres:hover {
+  background: rgba(52, 89, 149, 0.25);
+}
+
+.mysql {
+  border: 0.1rem solid rgb(0, 123, 255);
+}
+.mysql:hover {
+  background: rgba(0, 123, 255, 0.25);
+}
+
 .mongodb {
-  border: 0.1rem solid rgb(67, 153, 52);
+  border: 0.1rem solid rgb(99, 148, 90);
 }
 .mongodb:hover {
+  background: rgba(99, 148, 90, 0.25);
+}
+
+.django {
+  border: 0.1rem solid rgb(67, 153, 52);
+}
+.django:hover {
   background: rgba(67, 153, 52, 0.25);
+}
+
+.express {
+  border: 0.1rem solid rgb(255, 255, 255);
+}
+.express:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.bootstrap {
+  border: 0.1rem solid rgb(126, 214, 223);
+}
+.bootstrap:hover {
+  background: rgba(126, 214, 223, 0.25);
 }
 
 .redux {

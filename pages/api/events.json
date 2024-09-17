@@ -1,17 +1,17 @@
 [
   {
     "id": 1,
-    "name": "IEEE Young Professional",
-    "image": "/cert_ieeeYP.webp",
-    "description": "Recognition Certificate as an IOS / Android developer.",
-    "url": "https://drive.google.com/file/d/1C1wsxs6XHkbJX4WmfzQVVTGYGaRvMf8o/view?usp=sharing"
+    "name": "Web Development Basics",
+    "image": "/events/Web_Development_Basics.jpg",
+    "description": "I presented a course at University of Qadisiyah – Computer Sceince Department",
+    "url": "https://www.youtube.com/watch?v=qlAbz_ViASg&list=PL67dJr4W7S8caE0EfZBfnew1NnyuiVmsi"
   },
   {
     "id": 2,
-    "name": "Advance React JS",
-    "image": "/cert_mosh.webp",
-    "description": "a comprehensive course on frontend development with React JS",
-    "url": "https://drive.google.com/file/d/1qG1MU3Jn8N2bh3S-HZbnSL6DcOP3L3ul/view?usp=sharing"
+    "name": "Is Artificial Intelligence Going to Replace Us?",
+    "image": "/events/Is_Artificial_Intelligence_Going_to_Replace_Us.jpg",
+    "description": "I was the keynote speaker at the conference at Ataba Husainiyah Library in Qadisiyah",
+    "url": "https://qu.edu.iq/89064"
   }
  
 ]
