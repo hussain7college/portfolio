@@ -17,9 +17,9 @@ export default function HomePage() {
               <h1 className={styles.name}>Hussain Abbas</h1>
             </BlurFade>
             <h6 className={styles.bio}>Full Stack Web Developer</h6>
-            <Link href="/projects">
-              <button className={styles.button}>View Work</button>
-            </Link>
+            <a href="https://drive.google.com/file/d/1unAMR9mBimEPyCUuFeg52iCPEt6RclN9/view?usp=sharing" rel="noopener noreferrer" target="_blank">
+              <button className={styles.button}>Resume</button>
+            </a>
             <Link href="/contact">
               <button className={styles.outlined}>Contact Me</button>
             </Link>
