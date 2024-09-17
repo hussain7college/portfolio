@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Postgraduate Student Management System",
-    "image": "/projects/psms.png",
+    "image": "/projects/psms.webp",
     "description": "A platform for postgraduate students to manage their research projects",
     "tags": ["node", "react", "express", "postgres", "bootstrap"],
     "demo": "https://www.youtube.com/watch?v=HWIV9vRn6O4&list=PLa1rqQ2iznVC2D7FL1TVU82k4K4Os5Ek2"
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "name": "Gym Management System",
-    "image": "/projects/gymzella.png",
+    "image": "/projects/gymzella.webp",
     "description": "A platform for gym owners to manage their gym",
     "tags": ["node", "react", "django", "mysql", "bootstrap"],
     "demo": "https://youtu.be/0BV9UF8EE2I?si=98P92L27fulBDFk3"

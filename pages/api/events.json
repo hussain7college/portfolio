@@ -2,14 +2,14 @@
   {
     "id": 1,
     "name": "Web Development Basics",
-    "image": "/events/Web_Development_Basics.jpg",
+    "image": "/events/Web_Development_Basics.webp",
     "description": "I presented a course at University of Qadisiyah – Computer Sceince Department",
     "url": "https://www.youtube.com/watch?v=qlAbz_ViASg&list=PL67dJr4W7S8caE0EfZBfnew1NnyuiVmsi"
   },
   {
     "id": 2,
     "name": "Is Artificial Intelligence Going to Replace Us?",
-    "image": "/events/Is_Artificial_Intelligence_Going_to_Replace_Us.jpg",
+    "image": "/events/Is_Artificial_Intelligence_Going_to_Replace_Us.webp",
     "description": "I was the keynote speaker at the conference at Ataba Husainiyah Library in Qadisiyah",
     "url": "https://qu.edu.iq/89064"
   }

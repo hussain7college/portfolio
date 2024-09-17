@@ -7,7 +7,7 @@ const AboutPage = ({ events }) => {
   return (
     <div className='flex flex-row-reverse max-lg:flex-col'>
       <img
-        src='/personal_photo.jpg'
+        src='/personal_photo.webp'
         className='transition-all lg:flex-shrink-[1] h-[40rem] object-top rounded-lg object-cover max-lg:self-center max-lg:w-[15rem] max-lg:h-[15rem] max-lg:rounded-full'
         alt='Personal Photo'
       />
