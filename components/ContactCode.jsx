@@ -2,14 +2,14 @@ import styles from '/styles/ContactCode.module.css';
 
 const contactItems = [
   {
-    social: 'website',
-    link: 'hussain7abbas.com',
-    href: 'https://hussain7abbas.com',
-  },
-  {
     social: 'email',
     link: 'hussain.jazing.21@gmail.com',
     href: 'mailto:hussain.jazing.21@gmail.com',
+  },
+  {
+    social: 'Phone',
+    link: '+964 780 4834 849',
+    href: 'tel:+9647804834849',
   },
   {
     social: 'github',
@@ -30,6 +30,11 @@ const contactItems = [
     social: 'telegram',
     link: 'hussain7abbas',
     href: 'https://t.me/hussain7abbas',
+  },
+  {
+    social: 'website',
+    link: 'hussain7abbas.vercel.app',
+    href: 'https://hussain7abbas.vercel.app',
   },
 ];
 
